@@ -1,0 +1,667 @@
+
+@font-face {
+  font-family: 'PayPalSansSmall-Regular';
+  src:  url("https://www.paypalobjects.com/digitalassets/c/paypal-ui/fonts/PayPalSansSmall-Regular.woff2") format('woff2'),
+        url('https://www.paypalobjects.com/digitalassets/c/paypal-ui/fonts/PayPalSansSmall-Regular.woff') format('woff'),
+        url('https://www.paypalobjects.com/digitalassets/c/paypal-ui/fonts/PayPalSansSmall-Regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: "PayPalSansBig-Light"; 
+  src: url("https://www.paypalobjects.com/digitalassets/c/paypal-ui/fonts/PayPalSansBig-Light.woff2") format('woff2'),
+       url('https://www.paypalobjects.com/digitalassets/c/paypal-ui/fonts/PayPalSansBig-Light.woff') format('woff'),
+       url('https://www.paypalobjects.com/digitalassets/c/paypal-ui/fonts/PayPalSansBig-Light.svg') format('svg');
+}
+
+@font-face {
+  font-family: "PayPalSansBig-Regular"; 
+  src: url("https://www.paypalobjects.com/digitalassets/c/paypal-ui/fonts/PayPalSansBig-Regular.woff2") format('woff2'),
+       url('https://www.paypalobjects.com/digitalassets/c/paypal-ui/fonts/PayPalSansBig-Regular.woff') format('woff'),
+       url('https://www.paypalobjects.com/digitalassets/c/paypal-ui/fonts/PayPalSansBig-Regular.svg') format('svg');
+
+}
+
+
+body {
+  background-color: pink;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  font-family: "PayPalSansSmall-Regular"; 
+
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: white;
+  text-decoration:none;
+}
+
+.menu li a{
+  transform: translateY(10px);
+  color: #2B2B2B
+}
+
+.card{
+  background-color: white;
+  color:white;
+  width: 100%;
+  height: 60px;
+}
+
+#Hola{
+  position: relative;
+  background-color: darkblue;
+  width: 100%;
+  height: 600px;
+}
+
+#Image{
+  position: absolute;
+  height: 572px;
+  width: 250px;
+  display: flex;
+  align-items: flex-end;;
+}
+
+h1{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#Image img {
+  position: absolute;
+  left: 0px;
+  width: 1535px;
+  height: 500px;
+  bottom: 0;
+
+}
+header{
+  grid: 10px 10px 10px 10px 10px;
+}
+#ads{
+  position: absolute;
+  right: 200px;
+  top: 5px;
+  border: 0.0625rem solid #142c8e;
+  color: #142c8e;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #fff;
+}
+
+#Signup{
+  
+  position: absolute;
+  right: 75px;
+  top: 5px;
+  border: 0.0625rem solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #142c8e;
+}
+
+
+#Imagen{
+  position: absolute;
+  height: 600px;
+  width: 500px;
+  display: flex;
+  align-items: flex-end;;
+}
+
+#Imagen img {
+  position: absolute;
+  left: 800px;
+  bottom: 0;
+  height: 300px;
+  width: 375px;
+}
+
+header{
+  background-color: white;
+}
+
+p{
+  font-family: "PayPalSansSmall-Regular"; 
+  color: black;
+}
+
+button{
+  border-radius: 25px;
+}
+
+.flecha{
+  width: 34px;
+  height: 28px;
+  margin-left: 6px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+.flecha::after{
+  content: "";
+  position: absolute;
+  background-image: url("data:image/svg+xml,<svg width='28' height='16' viewBox='0 0 28 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M18.7096 0.387212C18.4046 0.779546 18.4325 1.34677 18.793 1.70721L24.087 6.999L1 7C0.447715 7 0 7.44772 0 8L0.00672773 8.11662C0.0644928 8.61396 0.487164 9 1 9L24.084 8.999L18.7937 14.293C18.4033 14.6837 18.4034 15.3168 18.794 15.7073C19.1846 16.0977 19.8178 16.0976 20.2082 15.707L27.2073 8.70498C27.5977 8.31439 27.5976 7.68127 27.207 7.29082L20.207 0.292793C19.8164 -0.0976758 19.1833 -0.0975864 18.7928 0.292993L18.7096 0.387212Z' fill='%231072EB'/></svg>");
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  background-size: 100%;
+  width: 26px;
+  height: 14px;
+  top: 46%;
+  left: 1px;
+}
+
+.Guia:hover > .flecha:after{
+  content: "";
+  position: absolute;
+  background-image: url("data:image/svg+xml,<svg width='28' height='16' viewBox='0 0 28 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M18.7096 0.387212C18.4046 0.779546 18.4325 1.34677 18.793 1.70721L24.087 6.999L1 7C0.447715 7 0 7.44772 0 8L0.00672773 8.11662C0.0644928 8.61396 0.487164 9 1 9L24.084 8.999L18.7937 14.293C18.4033 14.6837 18.4034 15.3168 18.794 15.7073C19.1846 16.0977 19.8178 16.0976 20.2082 15.707L27.2073 8.70498C27.5977 8.31439 27.5976 7.68127 27.207 7.29082L20.207 0.292793C19.8164 -0.0976758 19.1833 -0.0975864 18.7928 0.292993L18.7096 0.387212Z' fill='%231072EB'/></svg>");
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition-delay: 0s;
+  width: 26px;
+  height: 14px;
+  top: 46%;
+  left: 9px;
+  cursor:pointer;
+}
+
+.flecha::before{
+  content: "";
+  position: absolute;
+  background-color: #e4f1fb;
+  border-radius: 50%;
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  top: 6px;
+  left: 8px;
+  opacity: .7;
+}
+
+a{
+  text-decoration: none;
+}
+.Arriba a{
+  color: #56CCFE;
+}
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.A2{
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.phone{
+  width:35%;
+  height: 35%;
+}
+
+.crypto{
+  width:35%;
+  height: 35%;
+}
+
+.world{
+  width:35%;
+  height: 35%;
+}
+
+.qr{
+  width:35%;
+  height: 35%;
+}
+
+h2{
+  font-family: "PayPalSansBig-Light"; 
+  color: black;
+  font-size: 3rem;
+  line-height: 56px;
+}
+
+
+.Image{
+  z-index: -2;
+}
+
+.S2{
+  border-bottom: 1px solid gray;
+}
+
+.S3{
+  padding: 114px 60px 0;
+  grid: 100px 100px;
+
+}
+
+.S6{
+  padding: 114px 60px 0;
+  background-color: darkblue;
+
+}
+
+.A3{
+  display: block
+}
+.B3{
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 550px;
+  bottom: 100px
+}
+
+.B4{
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 550px;
+  bottom: 100px
+}
+
+.B5{
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 550px;
+}
+
+.B6{
+  display: inline-block;
+  position: relative;
+  width: 550px;
+  top: 100px
+}
+
+.logos {
+  display: inline-block;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 7vw);
+  grid-gap: 15px;
+  left: 600px;
+  bottom: 120px
+}
+
+.number{
+  background: #1072EB;
+  font-family: "PayPalSansSmall-Regular";
+  font-weight: 700;
+  border-radius: 20px;
+  margin-right: 2px;
+  width: 60px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  font-size: 60px;
+}
+
+.Welcome{
+  z-index: 1;
+  font-family: "PayPalSansSmall-Regular";
+}
+
+.Arriba{
+  z-index: 1;
+}
+
+.Count{
+  display: grid;
+  grid-template-columns: repeat(9, 62px);
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.Nuevos{
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.TM{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  left: 25px;
+}
+
+.Nuevos h2{
+  color: white;
+}
+
+.Free{
+  border: 0.0625rem solid #142c8e;
+  color: #142c8e;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.75rem 4.0rem;
+  background-color: #fff;
+}
+
+.Free:hover{
+  border: 0.0625rem solid #1072EB;
+  color: #1072EB;
+  cursor: pointer;
+}
+
+.Logos{
+  background: url("https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-mark-color.svg") no-repeat left top;
+  width: 50px;
+  height: 50px;
+  border: white;
+}
+
+#Image{
+  top: 10px
+}
+#Hola p{
+  color: white;
+}
+.Phone{
+  position: absolute;
+  display: flex;
+  width: 300px;
+  left: 400px;
+  top: 350px;
+  background: #ffffff url(https://www.paypalobjects.com/marketing/web/shared/qrc-sms/phone.png) no-repeat;
+    background-position: 12px;
+    padding: 20px 12px 18px 35px;
+  z-index: 5;  background-position: 12px;
+  padding: 20px 12px 18px 35px;
+  display: block;
+    box-sizing: border-box;
+    min-height: 3rem;
+    border: 0.0625rem solid #b7bcbf;
+    border-radius: 4px;
+}
+
+.Welcome{
+  font-family: "PayPalSansBig-Light";
+}
+
+.QR{
+  position: absolute;
+  display: flex;
+  left: 200px;
+  top: 350px;
+  height: 150px;
+}
+
+.Telefono{
+  position: absolute;
+  left: 400px;
+  bottom: 125px;
+  font-size: 1rem;
+  border: 0.0625rem solid #F9B822;
+  background: #F9B822;
+  color: #0C0C0D;
+  min-width: 138px;
+  min-height: 56px;
+}
+
+
+.Apply{
+  display: flex;
+  position: absolute;
+  left: 400px;
+  bottom: 50px;
+  z-index: 5;
+}
+
+.Welcome{
+  left: 250px;
+  top: 50px;
+  font-family: "PayPalSansBig-Light";
+  font-size: 80px;
+  white-space: pre;
+}
+
+.Arriba .Guia {
+  display: flex;
+  position: relative;
+  left: 290px;
+  bottom: 15px; 
+}
+
+.Arriba .Guia span {
+  display: flex;
+  position: relative;
+  bottom: 8px; 
+}
+
+.Arriba{
+  display: flex;
+  position: absolute;
+  left: 100px;
+  bottom: 250px; 
+}
+
+footer{
+  padding: 20px;
+}
+.Row li{
+  position: relative;
+  left: 135px;
+  font-family: "PayPalSansSmall-Regular"; 
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Linea{
+  position: relative;
+  width: 1200px;
+  height: 1px;
+  left: 140px;
+  color: gray;
+  background-color: gray;
+  border-color: gray;
+}
+
+.Rows li{
+  position: relative;
+  left: 135px;
+  font-family: "PayPalSansSmall-Regular"; 
+  font-size: 14px;
+  font-weight: 700;
+  color: lightgray;
+}
+
+.Rows{
+  position: relative;
+  width: 500px;
+  margin: 0px;
+  z-index: 0;
+  padding: 0;
+  color: gray;
+}
+
+.Rows a{
+  color: gray
+}
+
+.Rowss{
+  position: relative;
+  z-index: 1;
+  left: 1000px;
+  top: -34px;
+}
+
+.Rowss li a{
+  color: gray
+}
+
+.Rowss p{
+  bottom: 4px;
+  color: lightgray;
+}
+
+.USA{
+  display: flex;
+  position: relative;
+  height: 16px;
+  width: 24px;
+  left: 895px;
+  top: 10px;
+}
+
+.number h4{
+  font-family: "PayPalSansSmall-Regular";
+  font-weight: 700;
+  color: white;
+  transform: translateY(-78.8px);
+  transition: 1s translateY(-78.8px);  
+}
+
+.menu li a{
+  top: 100px
+}
+
+.B3{
+  left: 200px
+}
+
+.phone{
+transform: translateX(150px);
+}
+
+.crypto{
+  transform: translateX(200px);
+}
+
+.B4{
+  left: 150px
+}
+
+.qr{
+  transform: translateX(125px);
+}
+
+.B5{
+  left: 225px
+}
+
+.world{
+  transform: translateX(200px)
+}
+
+.B7{
+  display: inline-block;
+  position: relative;
+  left: 100px
+}
+
+.B6{
+  left: 25px
+}
+
+.Unidad{
+  animation: upward 1s ease-in-out infinite;
+}
+
+
+@keyframes upward {
+  0% {
+  transform: transLateY(0px)
+  }
+  50% {
+    transform: transLateY(-80px)
+  }
+  90% {
+    transform: transLateY(-200px)
+  }
+  100% {
+    transform: transLateY(-200px)
+  }
+}
+
+.Arriba .Guia{
+  display: flex;
+  position: relative;
+  bottom: 25px;
+}
+
+.Telefono{
+  font-size: 15px;
+  font-family: "PayPalSansBig-Light";
+  z-index: 1;
+}
+
+.Telefono:hover{
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+#ads{
+  font-family: "PayPalSansBig-Light"
+  
+}
+
+#Signup{
+  font-family: "PayPalSansBig-Light"
+}
+
+#ads:hover{
+  color: #0070ba;
+  border-color: #0070ba;
+  
+}
+
+#Signup:hover{
+  background-color: #0070ba;
+}
+
+.Rowss li p{
+  position: relative;
+  font-family: "PayPalSansSmall-Regular"; 
+  font-size: 14px;
+  font-weight: 700;
+  color: gray;
+}
+
+.Rows li a{
+  position: relative;
+  font-family: "PayPalSansSmall-Regular"; 
+  font-size: 14px;
+  font-weight: 700;
+  color: gray;
+}
